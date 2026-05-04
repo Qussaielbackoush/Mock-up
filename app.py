@@ -70,6 +70,15 @@ with col1:
     if st.button("📁 Dokumentbaum", use_container_width=True):
         st.session_state.view = 'all'
 with col2:
+    if st.button("📁 aktive Dokumente", use_container_width=True):
+        st.session_state.view = 'all'
+with col3:
+    if st.button("📁 inaktive Dokumente", use_container_width=True):
+        st.session_state.view = 'all'
+with col4:
+    if st.button("📁 archiverte Dokumente", use_container_width=True):
+        st.session_state.view = 'all'
+with col5:
     # This represents the "Meine Favoriten" button you sketched
     fav_label = f"★ Meine Favoriten ({len(st.session_state.favorites)})"
     if st.button(fav_label, type="primary", use_container_width=True):
@@ -120,8 +129,10 @@ else:
 
 # 6. Sidebar (Personal Button Context)
 with st.sidebar:
-    st.title("👤 Mein Profil")
-    st.write("Eingeloggt als: **Disponent_Süd**")
+    st.title("Dokumentenmangementsystem")
+    st.write("Eingeloggt als: **00_Tages La**")
+    st.write("Eingeloggt als: **01_AAT_Ammersee-Altmühltal**")
+    st.write("Eingeloggt als: **02_OL_Oberland**")
     st.progress(len(st.session_state.favorites) / len(documents), text="Speicherauslastung Favoriten")
     
     st.divider()
