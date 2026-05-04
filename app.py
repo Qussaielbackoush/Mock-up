@@ -64,7 +64,7 @@ documents = [
 st.markdown('<div class="header-style"><h1>DatNet Dokumentenmanagement</h1></div>', unsafe_allow_html=True)
 
 # 4. Main Navigation (The "Blue Box" Feature)
-col1, col2, col3, col4 = st.columns([1, 1, 1, 3])
+col1, col2, col3, col4 = st.columns([1, 1, 1, 1)
 
 with col1:
     if st.button("📁 Dokumentbaum", use_container_width=True):
@@ -127,9 +127,9 @@ else:
 # 6. Sidebar (Personal Button Context)
 with st.sidebar:
     st.title("Dokumentenmangementsystem")
-    st.write("Eingeloggt als: **00_Tages La**")
-    st.write("Eingeloggt als: **01_AAT_Ammersee-Altmühltal**")
-    st.write("Eingeloggt als: **02_OL_Oberland**")
+    st.write("**📂 00_Tages La**")
+    st.write("**📂 01_AAT_Ammersee-Altmühltal**")
+    st.write("**📂 02_OL_Oberland**")
     st.progress(len(st.session_state.favorites) / len(documents), text="Speicherauslastung Favoriten")
     
     st.divider()
