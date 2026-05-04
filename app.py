@@ -75,7 +75,7 @@ with col2:
 with col3:
     if st.button("📁 inaktive Dokumente", use_container_width=True):
         st.session_state.view = 'all'
-with col5:
+with col4:
     # This represents the "Meine Favoriten" button you sketched
     fav_label = f"★ Meine Favoriten ({len(st.session_state.favorites)})"
     if st.button(fav_label, type="primary", use_container_width=True):
