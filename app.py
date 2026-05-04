@@ -64,7 +64,7 @@ documents = [
 st.markdown('<div class="header-style"><h1>DatNet Dokumentenmanagement</h1></div>', unsafe_allow_html=True)
 
 # 4. Main Navigation (The "Blue Box" Feature)
-col1, col2, col3 = st.columns([1, 1, 3])
+col1, col2, col3, col4 = st.columns([1, 1, 1, 3])
 
 with col1:
     if st.button("📁 Dokumentbaum", use_container_width=True):
